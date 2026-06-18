@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* ── Dark theme (default) ── */
+:root,
+html.dark {
+  --bg:        #0F172A;
+  --navbar:    #111827;
+  --card:      #1E293B;
+  --card-alt:  #0F172A;
+  --heading:   #F8FAFC;
+  --body:      #CBD5E1;
+  --border:    #334155;
+  --accent:    #3B82F6;
+  --accent-h:  #60A5FA;
+  --btn:       #2563EB;
+  --btn-h:     #1D4ED8;
+  --btn-text:  #FFFFFF;
+  --input-ph:  #475569;
+  --profile-glow: 0 0 40px rgba(59,130,246,0.4);
+}
+
+/* ── Light theme ── */
+html.light {
+  --bg:        #FFFFFF;
+  --navbar:    #FFFFFF;
+  --card:      #F8FAFC;
+  --card-alt:  #F1F5F9;
+  --heading:   #0F172A;
+  --body:      #475569;
+  --border:    #E2E8F0;
+  --accent:    #2563EB;
+  --accent-h:  #1D4ED8;
+  --btn:       #2563EB;
+  --btn-h:     #1D4ED8;
+  --btn-text:  #FFFFFF;
+  --input-ph:  #94A3B8;
+  --profile-glow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--body);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
