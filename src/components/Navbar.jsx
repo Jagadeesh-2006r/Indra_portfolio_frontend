@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav style={{ backgroundColor: 'var(--navbar)', borderColor: 'var(--border)' }}
       className="fixed top-0 left-0 right-0 z-50 border-b transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <span style={{ color: 'var(--accent)' }} className="font-bold text-xl tracking-wide">Indra.dev</span>
+        <span style={{ color: 'var(--accent)' }} className="font-bold text-xl tracking-wide">Indra</span>
 
         <ul className="hidden md:flex items-center gap-6 text-sm" style={{ color: 'var(--body)' }}>
           {links.map(l => (
